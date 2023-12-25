@@ -6,21 +6,28 @@ class Node:
 class LinkedList: 
     def __init__(self, value): 
         new_node = Node(value) 
-        self.next = None 
         self.head = new_node 
         self.tail = new_node 
         self.length = 1 
     
-    #appending a node to linked list 
+     '''
+        - Appending node to linked list 
+            1. create new node
+            2. check if the linked list is empty 
+                2a. set the head and tails to the new node
+            3. for other conditions, set the next pointer of the last (tail) variable to the new node. 
+            4. set the tail to the new node 
+            5. increment the length and return True 
+     '''
     def append(self, value): 
         new_node = Node(value) 
-        if self.head == None: # if list is empty 
+        if self.head == None: 
             self.head = new_node 
             self.tail = new_node 
         else: 
-            self.tail.next = new_node # tail pointer should now point to new node
-            self.tail = new_node # the new node becomes the new tail node 
-        self.length += 1 #increment the length of list 
+            self.tail.next = new_node  
+            self.tail = new_node  
+        self.length += 1  
         return True 
     
     def print_list(self): 
