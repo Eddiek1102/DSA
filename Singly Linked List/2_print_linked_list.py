@@ -11,10 +11,11 @@ class LinkedList:
         self.length = 1 
 
     '''
-        this function prints the values of all the nodes in the linked list. 
-        a temproary variable 'temp' is set to the head of the linked list. 
-        a while loop checks it the temporary variable is set to None (reached end of the list?) 
-        iterates through the list and prints the values of each node and then moves the temporary variable to the next node in the list. 
+        - Printint values of nodes in linked list
+            1. set a temporary variable to the first node in the linked list (head). 
+            2. iterate through the nodes
+                2a. print the values of each node 
+                2b. set the temporary variable to the next node in the linked list. 
     '''
     def print_list(self): 
         temp = self.head  
