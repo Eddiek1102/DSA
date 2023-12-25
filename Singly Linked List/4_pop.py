@@ -22,7 +22,22 @@ class LinkedList:
         self.length += 1 
         return True 
     
-    #pop item off of linked list 
+    '''
+        - Popping last node off of linked list 
+            1. Check if linked list is empty
+                1a. return None (if list is empty) 
+            2. initialize 2 temporary variables to the head of the linked list. 
+            3. iterate through the linked list using both variables (one traveling one set ahead of the other) 
+            4. once the variable that's ahead points to None, you know you've reached the last node. 
+            5. set the new tail to be the second temp variable. this variable should now point to None. 
+            6. return the first variable (temp). 
+
+        ! If the linked list only has one element to begin with 
+            7. set the head and tail to None 
+
+            8. decrement the length of the linked list
+            9. return the first variable (the one that was popped off) 
+    '''
     def pop(self): 
         if self.head == None: #check if linked list is empty 
             return None 
