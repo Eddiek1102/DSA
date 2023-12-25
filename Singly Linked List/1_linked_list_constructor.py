@@ -5,8 +5,8 @@ class Node:
         node's next pointer -> None.
     '''
     def __init__(self, value): 
-        self.value = value #value
-        self.next = None #pointer
+        self.value = value  
+        self.next = None  
 
 class LinkedList: 
     '''
@@ -15,10 +15,10 @@ class LinkedList:
         length of linked list is 1 since there is only one node in the linked list
     '''
     def __init__(self, value):
-        new_node = Node(value) #create first node
-        self.head = new_node #initialize head pointer 
-        self.tail = new_node #initialize tail pointer 
-        self.length = 1 #keep track of of the length of the linked list 
+        new_node = Node(value)  
+        self.head = new_node  
+        self.tail = new_node  
+        self.length = 1 
     
     def append(self, value):
         #create a node, add node to end  
