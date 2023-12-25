@@ -1,8 +1,8 @@
 class Node: 
     '''
-        this class exists to create new nodes. 
-        initilizes the value of the new node to the value being passed in to the constructor. 
-        node's next pointer -> None.
+        - Node class 
+            1. initilizes the value of the new node to the value being passed in to the constructor. 
+            2. node's next pointer -> None.
     '''
     def __init__(self, value): 
         self.value = value  
@@ -10,9 +10,10 @@ class Node:
 
 class LinkedList: 
     '''
-        create a new node using the Node class. 
-        head and tail points to the new node since it's the first and only node in the linked list. 
-        length of linked list is 1 since there is only one node in the linked list
+        - Creating linked list constructor 
+            1. create a new node using the Node class. 
+            2. head and tail points to the new node since it's the first and only node in the linked list. 
+            3. length of linked list is 1 since there is only one node in the linked list
     '''
     def __init__(self, value):
         new_node = Node(value)  
