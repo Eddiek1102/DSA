@@ -110,11 +110,9 @@ class LinkedList:
             return False 
         elif index == 0: 
             self.prepend(value) 
-            self.length += 1 
             return True 
         elif index == self.length: 
             self.append(value) 
-            self.length += 1
             return True 
         else: 
             new_node = Node(value) 
