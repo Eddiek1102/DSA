@@ -77,7 +77,7 @@ class DoublyLinkedList:
         Get item at a particular index
             Check if index is out of range. If not, check to see if index is in first/last half of list. If in first half, use next pointers. If in last half, use prev pointers. 
     '''
-    def get(self, index): 
+    def get_value(self, index): 
         if index < 0 or index >= self.length: 
             return None 
         if index < self.length / 2: 
@@ -97,7 +97,7 @@ if __name__ == "__main__":
     test.append(3) 
     test.print_list()
     
-    got = test.get(1) 
-    got2 = test.get(2) 
+    got = test.get_value(1) 
+    got2 = test.get_value(2) 
     print(got.value)  
     print(got2.value)     
